@@ -1,0 +1,3 @@
+kubectl apply -f nginx-deployment.yaml
+kubectl expose deployment nginx-deployment --type=NodePort --port=80
+minikube service nginx-deployment
